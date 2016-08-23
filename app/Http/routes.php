@@ -11,6 +11,17 @@
 |
 */
 
+use Illuminate\Support\Facades\Mail;
+
+
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('sendqueue/mail',function()
+{
+    Mail::later(5,'view_email');
+});
+
+
