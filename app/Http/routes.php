@@ -21,7 +21,10 @@ Route::get('/', function () {
 
 Route::get('sendqueue/mail',function()
 {
-    Mail::later(5,'view_email');
+    Mail::later(5,'view_email', 'Hisoka data from email queue...', function($message)
+        {
+            $message->to('hyosoka187@gmail.com','From Maryadi_astronaut')->subject('test email');
+        });
 });
 
 

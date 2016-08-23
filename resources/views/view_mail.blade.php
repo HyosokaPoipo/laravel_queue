@@ -1,1 +1,1 @@
-Your mail will be sent on 5 seconds... :D
+Your mail will be sent on 5 seconds as queue job... :D
